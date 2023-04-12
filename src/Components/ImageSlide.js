@@ -56,7 +56,8 @@ const ImageSlide = ({ slides }) => {
     borderRadius: "10px",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    backgroundImage: `url(${slides[currentIndex].url})`,
+    backgroundImage: `url(${slides[currentIndex].img})`,
+
   };
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -73,7 +74,7 @@ const ImageSlide = ({ slides }) => {
   };
   const slideStylesWidthBackground = {
     ...slideStyles,
-    backgroundImage: `url(${slides[currentIndex].url})`,
+    backgroundImage: `url(${slides[currentIndex].img})`,
   };
 
   return (
