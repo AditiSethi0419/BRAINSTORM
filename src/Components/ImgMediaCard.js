@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import Image3 from '../Images/Image3.jpg';
 export default function ImgMediaCard() {
   return (
-    <div>
+
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
@@ -31,6 +31,5 @@ export default function ImgMediaCard() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-    </div>
   );
 }

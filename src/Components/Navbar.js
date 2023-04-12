@@ -63,12 +63,12 @@ function Navbar() {
       </div>
     <br></br>
     <br></br>
-      <div>
+    <Box sx={{display:'flex',flexDirection:'row'}}>
       <ImgMediaCard />
       <ImgMediaCard />
       <ImgMediaCard />
       <ImgMediaCard />
-      </div>
+      </Box>
    <Footer />
       
       
