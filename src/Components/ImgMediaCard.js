@@ -14,7 +14,6 @@ export default function ImgMediaCard() {
         component="img"
         alt="green iguana"
         height="140"
-        
         image={Image3}
       />
       <CardContent>

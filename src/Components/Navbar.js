@@ -12,8 +12,8 @@ import Image2 from '../Images/Image2.png';
 import Image3 from '../Images/Image3.jpg';
 import Image4 from '../Images/Image4.png';
 import Image5 from '../Images/Image5.jpg';
-import ImgMediaCard from './ImgMediaCard';
 import Footer from './Footer';
+import PageGrid from './PageGrid';
 
 const slides =[
   {title:'Image1',img:Image1,description:'I am image1'},
@@ -64,10 +64,7 @@ function Navbar() {
     <br></br>
     <br></br>
     <Box sx={{display:'flex',flexDirection:'row'}}>
-      <ImgMediaCard />
-      <ImgMediaCard />
-      <ImgMediaCard />
-      <ImgMediaCard />
+      <PageGrid />
       </Box>
    <Footer />
       
