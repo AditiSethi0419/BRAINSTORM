@@ -1,12 +1,14 @@
 import React from 'react';
-
-
+import { Box } from '@mui/material';
+import Typography from '@mui/material/Typography';
 
 function Footer() {
   return (
-    <div>
-      This is footer
-    </div>
+  <Box position="static" sx={{ bgcolor: "pink",color:'black',textAlign:'center', p:2}}>
+    <Typography>
+     BRAINSTORM
+    </Typography>
+  </Box>
   );
 }
 

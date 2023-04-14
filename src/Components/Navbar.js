@@ -24,7 +24,7 @@ const slides =[
 ];
 function Navbar() {
   const containerStyles = {
-    width: "500px",
+    width: "auto",
     height: "280px",
     margin: "0 auto",
   };
@@ -63,14 +63,11 @@ function Navbar() {
       </div>
     <br></br>
     <br></br>
-    <Box sx={{display:'flex',flexDirection:'row'}}>
+  
       <PageGrid />
-      </Box>
+    
    <Footer />
-      
-      
-      
-    </>
+  </>
   );
 }
 export default Navbar;
