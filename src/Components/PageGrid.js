@@ -1,24 +1,28 @@
 import React from 'react';
 import ImgMediaCard from './ImgMediaCard';
-import {Grid} from '@mui/material';
 import Categories from './Categories';
 
 const PageGrid = () => {
   return (
     
-  <Grid container display={'flex'} flexWrap={'nowrap'}> 
-  <Grid item xs={8} sx={{m:3,p:3}} display={'flex'} >
+  <div className='container'>
+    <div className='row'>
+  <div className='col-8'>
+  <div className='row'>
     
     <ImgMediaCard />
     <ImgMediaCard />
-   
- 
-  </Grid> 
-  <Grid item xs={4} sx={{m:3,p:3}}>
+    <ImgMediaCard />
+    <div>
+    <button type="button" class="btn btn-primary my-2">Load more</button>
+    </div>
+    </div>      
+  </div> 
+  <div className='col-4'>
  <Categories />
-  </Grid>
- </Grid>
-
+  </div>
+ </div>
+ </div>
   );
 }
 
