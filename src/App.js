@@ -1,11 +1,20 @@
 
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import HomeScreen from './Components/HomeScreen';
 import Navbar from './Components/Navbar';
 
 function App() {
   return (
     <div className='App'>
-      <Navbar />
+      <Routes>
+        
+              <Route path='/' element={<HomeScreen />}/>
+              <Route path='/signup' element={<Navbar/>}/>
+              <Route path='/write' element={<Navbar/>}/>
+              
+              </Routes>
+              
     </div>
   );
 }
