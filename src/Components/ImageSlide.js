@@ -1,4 +1,5 @@
-import { useState } from "react";
+
+import { useState,useRef,useEffect } from "react";
 // import slides from './ImageSlideData';
 
 // const slideStyles = {
@@ -33,6 +34,8 @@ const leftArrowStyles = {
 };
 
 const sliderStyles = {
+  padding: "10px",
+  margin: "10px",
   position: "relative",
   height: "100%",
 };
@@ -49,12 +52,14 @@ const dotStyle = {
 };
 
 const ImageSlide = ({ slides }) => {
+  const timerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const slideStyles = {
     width: "100%",
     height: "100%",
-    borderRadius: "10px",
-    backgroundSize: "cover",
+    borderRadius: "5px",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "100% 100%",
     backgroundPosition: "center",
     backgroundImage: `url(${slides[currentIndex].img})`,
 
@@ -76,6 +81,17 @@ const ImageSlide = ({ slides }) => {
     ...slideStyles,
     backgroundImage: `url(${slides[currentIndex].img})`,
   };
+
+  useEffect(()=>{
+    if(timerRef.current){
+      clearTimeout(timerRef.current);
+    }
+    console.log('useEffect');
+    timerRef.current = setTimeout(()=>{
+      goToNext();
+    },5000)
+    return () =>clearTimeout(timerRef.current);
+  })
 
   return (
     <div style={sliderStyles}>

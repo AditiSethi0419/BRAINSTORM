@@ -9,12 +9,11 @@ import Image3 from '../Images/Image3.jpg';
 export default function ImgMediaCard() {
   return (
 
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345,maxHeight:'23rem' , mx:2, mt:2,my:2}}>
       <CardMedia
         component="img"
         alt="green iguana"
         height="140"
-        
         image={Image3}
       />
       <CardContent>
@@ -27,9 +26,10 @@ export default function ImgMediaCard() {
         </Typography>
       </CardContent>
       <CardActions>
-       
-        <Button size="small">Learn More</Button>
+       <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
+   
+   
   );
 }
