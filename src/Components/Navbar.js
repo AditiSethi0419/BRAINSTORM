@@ -16,8 +16,11 @@ function Navbar() {
    <Box sx={{ flexGrow: 1 }}>
     <AppBar position="static" sx={{ bgcolor: "white",color:'black',textAlign:'right' }} >
       <Container maxWidth="xl">
+    
         <Toolbar >
+        
         <img src={blog_logo} style={{width:'50px',height:'50px'}}  alt='logo_here'/>
+        <Link to='/'>
           <Typography
             variant="h6"
             noWrap
@@ -34,6 +37,7 @@ function Navbar() {
             }}>
             BRAINSTORM
            </Typography>
+           </Link>
           <Box  sx={{flexGrow: 1,color:'black'}}>
           <Link to='write'><Button color="inherit">Write</Button></Link>
           <Link to='signup'><Button color="inherit">Sign In</Button></Link>
