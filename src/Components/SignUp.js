@@ -7,7 +7,7 @@ function SignUp() {
     <div  style={{backgroundColor: "#eee"}} >
       <Navbar/>
     <div className="container" style={{backgroundColor: "#eee"}}>
-      <div className="row d-flex justify-content-center align-items-center my-4">
+      <div className="row  my-4">
         <div className="col-lg-12 col-xl-11">
           <div className="card text-black" style={{borderRadius: "25px"}}>
             <div className="card-body p-md-5">

@@ -1,12 +1,14 @@
 import React from 'react';
 import Footer from './Footer';
 import Navbar from './Navbar';
+import { useForm } from "react-hook-form";
+import Image7 from '../Images/Image7.png'
 
 const SignIn = () => {
-  return (
- 
-    <div className="container" style={{backgroundColor: "#eee"}}>
-    <Navbar/>
+   return (<div style={{backgroundColor: "#eee"}}>
+   <Navbar/>
+    <div className="container" >
+  
     <div className="row d-flex justify-content-center align-items-center my-4">
       <div className="col-lg-12 col-xl-11">
         <div className="card text-black" style={{borderRadius: "25px"}}>
@@ -16,7 +18,7 @@ const SignIn = () => {
 
                 <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-2">Sign In</p>
 
-                <form className="mx-1 mx-md-4">
+                <form className="mx-1 mx-md-4" >
                   <div className="d-flex flex-row align-items-center mb-4">
                     <div className="form-outline flex-fill mb-0 text-start">
                     <label className="form-label" htmlFor="email">Email</label>
@@ -41,7 +43,7 @@ const SignIn = () => {
               </div>
               <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
 
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/005/877/701/small/mobile-banking-modern-flat-concept-for-web-banner-design-woman-enters-login-and-password-for-secure-access-to-personal-financial-account-in-application-illustration-with-isolated-people-scene-free-vector.jpg"
+                <img src={Image7}
                   className="img-fluid w-100" alt="Sample image"/>
 
               </div>
@@ -50,10 +52,10 @@ const SignIn = () => {
         </div>
       </div>
     </div>
-    <Footer />
-  </div>
   
- 
+  </div>
+  <Footer />
+  </div>
   );
 }
 

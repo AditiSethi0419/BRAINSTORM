@@ -14,7 +14,7 @@ const PageGrid = () => {
     <ImgMediaCard />
     <ImgMediaCard />
     <div>
-    <button type="button" class="btn btn-primary my-2">Load more</button>
+    <button type="button" className="btn btn-primary my-2">Load more</button>
     </div>
     </div>      
   </div> 
