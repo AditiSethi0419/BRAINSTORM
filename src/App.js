@@ -15,9 +15,9 @@ function App() {
       <Routes>
         
               <Route path='/' element={<HomeScreen />}/>
-              {/* <Route path='/SignUp' element={<SignUp/>}/> */}
-              <Route path='/SignUp' element={<SignIn/>}/>
-              <Route path='/write' element={<ProfilePage/>}/>
+              <Route path='/signUp' element={<SignUp/>}/>
+              <Route path='/signIn' element={<SignIn/>}/>
+              <Route path='/write' element={<Write/>}/>
               
       </Routes>
               

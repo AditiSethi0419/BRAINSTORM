@@ -40,7 +40,7 @@ function Navbar() {
            </Link>
           <Box  sx={{flexGrow: 1,color:'black'}}>
           <Link to='write'><Button color="inherit">Write</Button></Link>
-          <Link to='signup'><Button color="inherit">Sign In</Button></Link>
+          <Link to='signin'><Button color="inherit">Sign In</Button></Link>
           </Box>
           </Toolbar>
       </Container>
